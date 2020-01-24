@@ -1,3 +1,5 @@
+module One where
+
 sumMultiples :: (Int, Int) -> Int
 sumMultiples (0, acc) = acc
 sumMultiples (n, acc) = 
@@ -5,4 +7,4 @@ sumMultiples (n, acc) =
     then sumMultiples (n - 1, n + acc)
     else sumMultiples (n - 1, acc)
 
-main = putStrLn (show (sumMultiples (999, 0)))
+one = putStrLn (show (sumMultiples (999, 0)))

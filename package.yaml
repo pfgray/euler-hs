@@ -21,7 +21,10 @@ dependencies:
 - base >= 4.7 && < 5
 
 library:
-  source-dirs: src, src/common, src/solutions
+  source-dirs:
+    - src
+    - src/common
+    - src/solutions
 
 executables:
   euler-hs-exe:

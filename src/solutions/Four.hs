@@ -1,4 +1,4 @@
-
+module Four where
 
 nums = [100..999]
 
@@ -21,4 +21,4 @@ largestPdromeProdIn (a, (b:bs), biggest) = let big = a * b in
     then Just big `max` biggest 
     else largestPdromeProdIn (a, bs, biggest)
 
-main = putStrLn $ show $ largestPdromeProd (nums, Nothing)
+four = putStrLn $ show $ largestPdromeProd (nums, Nothing)

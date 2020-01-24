@@ -1,4 +1,4 @@
-
+module Six where
 nats = 1 : map (+1) nats
 
 sumOfSquares :: Num t => [t] -> t -> t
@@ -11,4 +11,4 @@ squareOfSum (n:ns) acc = squareOfSum ns (n + acc)
 hun = take 100 nats
 ten = take 10 nats
 
-main = putStrLn $ show $ ((squareOfSum hun 0) - (sumOfSquares hun 0))
+six = putStrLn $ show $ ((squareOfSum hun 0) - (sumOfSquares hun 0))

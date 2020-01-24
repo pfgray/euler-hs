@@ -1,3 +1,5 @@
+module Two where
+
 sumEvenFibs :: (Int, Int, Int) -> Int
 sumEvenFibs (prevPrev, prev, acc) =
   let next = prevPrev + prev in
@@ -7,4 +9,4 @@ sumEvenFibs (prevPrev, prev, acc) =
         then sumEvenFibs (prev, next, acc + next)
         else sumEvenFibs (prev, next, acc)
 
-main = putStrLn (show (sumEvenFibs (1, 2, 2)))
+two = putStrLn (show (sumEvenFibs (1, 2, 2)))

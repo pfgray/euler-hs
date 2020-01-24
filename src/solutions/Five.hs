@@ -1,4 +1,4 @@
-
+module Five where
 
 nats = 20 : map (+20) nats
 
@@ -11,6 +11,6 @@ isDivisible (d:ds) n
   | otherwise = False
 
 
-main = putStrLn $ show $ head $ filter (isDivisible divisors) nats
+five = putStrLn $ show $ head $ filter (isDivisible divisors) nats
 
 
