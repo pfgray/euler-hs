@@ -11,4 +11,8 @@ trianglesI sum i =
   let newSum = sum + i in
     newSum : trianglesI newSum (i + 1)
 
-
+collatz :: Integer -> Integer -> Integer
+collatz sum n
+  | n <= 1 = sum + 1
+  | n `mod` 2 == 0 = collatz (sum + 1) (n `div` 2)
+  | otherwise = collatz (sum + 1) (3 * n + 1)
